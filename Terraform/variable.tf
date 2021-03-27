@@ -14,7 +14,7 @@ variable “env” {
 type = string
 } 
 
-
-variable “subNetSpace” {
+variable “subnet” {
 type = string
-}
+} 
+

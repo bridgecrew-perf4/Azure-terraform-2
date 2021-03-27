@@ -17,7 +17,7 @@ provider "azurerm" {
    name   =   "${var.env}-subnet"
    resource_group_name   =    var.resource_group_name 
    virtual_network_name   =   azurerm_virtual_network.myvnet.name 
-   address_prefix   =   var.subNetSpace 
+   address_prefix   =   var.subnet
  } 
 
  resource   "azurerm_public_ip"   "myvm1publicip"   { 
