@@ -12,9 +12,10 @@ variable "location" {
 
 variable "env" {
 type = string
+default = "tst"
 } 
 
 variable "subnet" {
-type = string
+type = "10.0.10.0/24"
 } 
 
