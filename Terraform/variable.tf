@@ -9,3 +9,12 @@ variable "location" {
  description = "location"
  default = "westeurope"
 }
+
+variable “env” {
+type = string
+} 
+
+
+variable “subNetSpace” {
+type = string
+}
