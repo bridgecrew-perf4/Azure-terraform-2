@@ -1,2 +1,5 @@
-resource_group_name = "terrform-uat-rg1"
+resource_group_name = "terraform-rg1"
+env = "uat"
 location = "westeurope"
+vnetspace = "10.0.0.0/16"
+subnet = "10.0.2.0/24"
