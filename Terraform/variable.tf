@@ -10,11 +10,11 @@ variable "location" {
  default = "westeurope"
 }
 
-variable “env” {
+variable "env" {
 type = string
 } 
 
-variable “subnet” {
+variable "subnet" {
 type = string
 } 
 
