@@ -30,7 +30,7 @@ provider "azurerm" {
 
  resource   "azurerm_network_interface"   "myvm1nic"   { 
    name   =   "${var.env}-nic" 
-   location   =   "var.location" 
+   location   =   var.location
    resource_group_name   =   var.resource_group_name 
 
    ip_configuration   { 
