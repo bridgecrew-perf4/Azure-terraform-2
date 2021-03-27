@@ -60,5 +60,13 @@ provider "azurerm" {
    os_disk   { 
      caching                =   "ReadWrite" 
      storage_account_type   ="Standard_LRS" 
+
+   tags = {
+     environment = "${var.env}"
+  }
+
+   
    } 
  }
+
+  
