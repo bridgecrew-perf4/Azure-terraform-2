@@ -16,6 +16,7 @@ default = "tst"
 } 
 
 variable "subnet" {
-type = "10.0.10.0/24"
+type = string
+default = "10.0.10.0/24"
 } 
 
