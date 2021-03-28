@@ -41,6 +41,7 @@ provider "azurerm" {
    } 
  } 
 
+
  resource   "azurerm_windows_virtual_machine"   "example"   { 
    name                    =   "${var.env}-vm1"   
    location                =   var.location 
@@ -59,14 +60,13 @@ provider "azurerm" {
 
    os_disk   { 
      caching                =   "ReadWrite" 
-     storage_account_type   ="Standard_LRS" 
-
-   tags = {
-     environment = "${var.env}"
-  }
-
-   
+     storage_account_type   ="Standard_LRS"   
    } 
+
+    tags = {
+    environment = "${var.env}"
+    }
+   
  }
 
   
